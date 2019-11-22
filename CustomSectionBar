@@ -1,0 +1,97 @@
+<html><head>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta charset="utf-8">
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <style type="text/css">
+        .declarationtext {
+            font-family: 'Segoe UI';
+            font-size: 12px;
+            color: rgb(68,68,68);
+            word-wrap: break-word;
+            position:fixed;
+            top:0;
+            left:0;
+        }
+    </style>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+<meta></head>
+<body style="width: 100%; word-wrap: break-word;">
+    <script>
+        function getDataParam() {
+            //Get the any query string parameters and load them
+            //into the vals array
+
+            var vals = new Array();
+            if (location.search != "") {
+                vals = location.search.substr(1).split("&");
+                for (var i in vals) {
+                    vals[i] = vals[i].replace(/,()\+/g, " ").split("=");
+                }
+                //look for the parameter named 'data'
+                var found = false;
+                for (var i in vals) {
+                    if (vals[i][0].toLowerCase() == "data") {
+                        return vals[i][1];
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) { return ""; }
+            }
+            else {
+                return "";
+            }
+        }
+    </script>
+    <div class="declarationtext" id="customSectionBar" style="width: 1200px; text-align: justify; vertical-align: top;"><span style="font-family: &quot;Segoe UI&quot;, sans-serif; font-size: 9pt;">Test</span></div>
+
+    <script>
+        var sectionBarLabel = getDataParam();
+        var strReplace20 = sectionBarLabel.replace(/%20/g, ' ');
+        var strReplcae2c = strReplace20.replace(/%2c/g, ', ');
+        var strReplcae28 = strReplcae2c.replace(/%28/g, '(');
+        var strReplcae29 = strReplcae28.replace(/%29/g, ')');
+        var strReplcae26 = strReplcae29.replace(/%26/g, '&');
+        var strReplcae30 = strReplcae26.replace(/%2f/g, '/');
+        var strReplcae32 = strReplcae30.replace(/%40/g, '@');
+        var strReplcae33 = strReplcae32.replace(/%24/g, '$');
+        var strReplcae34 = strReplcae33.replace(/%3a/g, ':');
+        var strReplcae35 = strReplcae34.replace(/%c2%a7/g, 'ยง');
+        var strReplcae36 = strReplcae35.replace(/%3b/g, ';');
+        var strReplcae37 = strReplcae35.replace(/%23/g, '#');
+        var strReplcae38 = strReplcae37.replace(/%25/g, '%');
+        var strReplcae39 = strReplcae38.replace(/%2a/g, '*');
+
+        var str27 = "'";
+        var strReplcae31 = strReplcae39.replace(/%3f/g, '?');
+
+        document.getElementById('customSectionBar').innerHTML = strReplcae31.replace(/%27/g, str27).replace(/%e2%80%99/g, "'");
+    </script>
+
+</body></html>
