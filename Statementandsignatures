@@ -1,0 +1,184 @@
+<html><head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .declarationtext {
+            font-family: 'Segoe UI';
+            font-size: 12px;
+            color: rgb(68,68,68);
+            word-wrap: break-word;
+            align: center;
+        }
+    </style>
+
+    <script>
+        function getDataParam() {
+            //Get the any query string parameters and load them
+            //into the vals array
+
+            var vals = new Array();
+            if (location.search != "") {
+                vals = location.search.substr(1).split("&");
+                for (var i in vals) {
+                    vals[i] = vals[i].replace(/,()\+/g, " ").split("=");
+                }
+                //look for the parameter named 'data'
+                var found = false;
+                for (var i in vals) {
+                    if (vals[i][0].toLowerCase() == "data") {
+                        return vals[i][1];
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found)
+                { return ""; }
+            }
+            else {
+                return "";
+            }
+        }
+    </script>
+    <meta>
+    <meta>
+<meta><meta></head>
+
+<body style="overflow-wrap: break-word;" dir="LTR" lang="en-US">
+    <div align="justify">
+        <div id="BoilerApplication" style="display: none;">
+            <p>
+                I am an authorized New York City Boiler Inspector.
+            </p><p>
+                For all Subsequent Inspection Report(s) in this submission (if any), I duly swear under penalty of perjury that I have reviewed the defects identified on the relevant Initial Inspection Report(s) and any other relevant Defects Reports, and, unless otherwise noted in this submission, based upon my inspection, all such defects have been corrected and/or did not exist at the time of my inspection, in accordance with New York City and State Code.
+            </p><p>
+                I hereby state that all statements in this submission are correct and complete to the best of my knowledge. Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+                <br>
+            </p><p>
+                I have personally reviewed all information in this submission. I understand and agree that by personally clicking on the box at left I am electronically signing this submission and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand, and I further agree that, by uploading an electronic image of my signature and professional seal as part of this submission, I am applying such signature and seal to this submission and signed statement as if I had personally signed and sealed this submission by hand.
+            </p><br>
+
+        </div>
+        <div id="BoilerApplicationTypeBB" style="display: none;">
+            <p>
+                I am an authorized New York City Boiler Inspector.
+            </p><p>
+                For all Subsequent Inspection Report(s) in this submission (if any), I duly swear under penalty of perjury that I have reviewed the defects identified on the relevant Initial Inspection Report(s) and any other relevant Defects Reports, and, unless otherwise noted in this submission, based upon my inspection, all such defects have been corrected and/or did not exist at the time of my inspection, in accordance with New York City and State Code.
+            </p><p>
+                I hereby state that all statements in this submission are correct and complete to the best of my knowledge. Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this submission. I understand and agree that by personally clicking on the box at left I am electronically signing this submission and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand.
+            </p><p>
+            </p>
+        </div>
+        <div id="NewDefectsBIR" style="display: none;">
+            <p>
+                I hereby state that all statements herein are correct and complete to the best of my knowledge.  Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this defects report.  I understand and agree that by personally clicking on the box at left I am electronically signing this defects report and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand, and I further agree that, by uploading an electronic image of my signature and professional seal as part of this defects report, I am applying such signature and seal to this defects report and signed statement as if I had personally signed and sealed them by hand.
+            </p><p>
+            </p>
+        </div>
+        <div id="NewDefectsBIRTypeBB" style="display: none;">
+            <p>
+                I hereby state that all statements herein are correct and complete to the best of my knowledge.  Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this defects report.  I understand and agree that by personally clicking on the box at left I am electronically signing this defects report and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand.
+            </p><p>
+            </p>
+        </div>
+        <div id="BirReportedDefects" style="display: none;">
+
+            <p>
+                I am an authorized New York City Boiler Inspector, and I duly swear under penalty of perjury that I have reviewed the defects identified on the defect report(s) associated with this report and, unless otherwise noted in this report, based upon my inspection, all such defects have been corrected and/or did not exist at the time of my inspection, in accordance with New York City and State Code.
+            </p><p>
+                I hereby state that all statements herein are correct and complete to the best of my knowledge. Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this report. I understand and agree that by personally clicking on the box at left I am electronically signing this report and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand, and I further agree that, by uploading an electronic image of my signature and professional seal as part of this report, I am applying such signature and seal to this report and signed statement as if I had personally signed and sealed them by hand.
+            </p><p>
+            </p>
+        </div>
+        <div id="BirReportedDefectsTypeBB" style="display: none;">
+
+            <p>
+                I am an authorized New York City Boiler Inspector, and I duly swear under penalty of perjury that I have reviewed the defects identified on the defect report(s) associated with this report and, unless otherwise noted in this report, based upon my inspection, all such defects have been corrected and/or did not exist at the time of my inspection, in accordance with New York City and State Code.
+            </p><p>
+                I hereby state that all statements herein are correct and complete to the best of my knowledge. Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this report. I understand and agree that by personally clicking on the box at left I am electronically signing this report and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand.
+
+            </p>
+        </div>
+
+        <div id="ReportedDefectsTypeBB" style="display: none;">
+            <p>
+                I am an authorized New York City Boiler Inspector, and I duly swear under penalty of perjury that I have reviewed the defects identified on the defect report(s) associated with this report and, unless otherwise noted in this report, based upon my inspection, all such defects have been corrected and/or did not exist at the time of my inspection, in accordance with New York City and State Code.
+            </p><p>
+                I hereby state that all statements herein are correct and complete to the best of my knowledge. Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this report. I understand and agree that by personally clicking on the box at left I am electronically signing this report and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand.
+
+            </p>
+        </div>
+
+        <div id="ExtensionApplication" style="display: none;">
+
+            <p>
+                Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this submission. I understand and agree that by personally clicking on the box at left I am electronically signing this submission and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand, and I further agree that, by uploading an electronic image of my signature and professional seal as part of this submission, I am applying such signature and seal to this submission and signed statement as if I had personally signed and sealed this submission by hand.
+            </p><p>
+            </p>
+        </div>
+        <div id="ExtensionApplicationTypeBB" style="display: none;">
+
+            <p>
+                Falsification of any statement is a misdemeanor and punishable by a fine, imprisonment, or both. It is unlawful to give a city employee, or for a city employee to accept, any benefit, monetary or otherwise, either as a gratuity for properly performing the job or in exchange for special consideration. Violation is punishable by imprisonment or fine or both. I understand that if I am found after hearing to have knowingly or negligently made a false statement or to have knowingly or negligently falsified or allowed to be falsified any certificate, form, signed statement, application, or report or certification of the correction of a violation required under the provisions of this code or of a rule of any agency, I may be barred from filing further applications or documents with the department.
+            </p><p>
+                I have personally reviewed all information in this submission. I understand and agree that by personally clicking on the box at left I am electronically signing this submission and expressing my agreement with the Statement terms herein. I understand that this electronic signature shall have the same validity and effect as a signature affixed by hand.
+            </p><p>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        var sectionBarLabel = getDataParam();
+        //get parent license  type
+
+
+    if (sectionBarLabel)
+    {
+        var x = eval(sectionBarLabel);
+        if (window.parent.Xrm.Page.data.entity.attributes.get("dobnyc_bo9_license"))
+        var lookupItem = window.parent.Xrm.Page.data.entity.attributes.get("dobnyc_bo9_license").getValue()
+        if (lookupItem == null)
+        {
+            if (window.parent.Xrm.Page.data.entity.attributes.get("dobnyc_bnr_applicantlicense"))
+            lookupItem = window.parent.Xrm.Page.data.entity.attributes.get("dobnyc_bnr_applicantlicense").getValue()
+        }
+        if (lookupItem == null) {
+            if (window.parent.Xrm.Page.data.entity.attributes.get("dobnyc_bo13e_applicantlicense"))
+            lookupItem = window.parent.Xrm.Page.data.entity.attributes.get("dobnyc_bo13e_applicantlicense").getValue()
+        }
+
+        if (lookupItem != null) {
+            var name = lookupItem[0].name;
+            var guid = lookupItem[0].id;
+            var entType = lookupItem[0].entityType;
+            if (name.indexOf("BB")>-1) {
+                var sectionBarLablTypeBB = getDataParam(); + "TypeBB"
+                sectionBarLablTypeBB = sectionBarLablTypeBB + "TypeBB"
+                x = eval(sectionBarLablTypeBB);
+            }
+        }
+
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+    </script>
+
+
+
+
+</body></html>
